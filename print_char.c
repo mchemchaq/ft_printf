@@ -6,7 +6,7 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:59:28 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/12/17 17:04:26 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/17 20:05:10 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 int	print_char(char c)
 {
-	int i;
-	
+	int	i;
+
 	i = write(1, &c, 1);
-	return(i);
+	return (i);
 }
-
-

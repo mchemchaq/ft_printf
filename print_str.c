@@ -6,26 +6,26 @@
 /*   By: mchemcha <mchemcha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 16:16:28 by mchemcha          #+#    #+#             */
-/*   Updated: 2023/12/16 17:02:04 by mchemcha         ###   ########.fr       */
+/*   Updated: 2023/12/17 19:52:54 by mchemcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int print_str(char *c)
+int	print_str(char *c)
 {
-    int i;
-    
-    i = 0;
-    if (!c)
-    {
-        write(1, "(null)",6);
-        return(i += 6, i);
-    }
-    while (c[i])
-    {
-        write(1, &c[i], 1);
-        i++;
-    }
-    return (i);
+	int	i;
+
+	i = 0;
+	if (!c)
+	{
+		write (1, "(null)", 6);
+		return (i += 6, i);
+	}
+	while (c[i])
+	{
+		write (1, &c[i], 1);
+		i++;
+	}
+	return (i);
 }
